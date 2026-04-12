@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             
         ]);
 
-        /*
+        
         // Seed Data to test with
         $jobData = json_decode(file_get_contents(database_path('data/job_data.json')),true);
         $jobApplications = json_decode(file_get_contents(database_path('data/job_applications.json')),true);
@@ -126,6 +126,6 @@ class DatabaseSeeder extends Seeder
 
         }
 
-        */
+        
     }
 }
