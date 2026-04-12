@@ -21,7 +21,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        dd('Seeder is running');
         // Seed the root admin
 
         User::firstOrCreate([
