@@ -11,6 +11,7 @@ use App\Models\JobCategory;
 use App\Models\JobVacancy;
 use App\Models\Resume;
 use App\Models\JobApplication;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
