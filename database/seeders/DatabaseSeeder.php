@@ -22,12 +22,13 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Seed the root admin
-
+        $password = env('ADMIN_PASSWORD', Str::random(12));
+        
         User::firstOrCreate([
             'email'=>'admin@admin.com',
         ],[
             'name'=>'Admin',
-            'password'=>Hash::make('1234567890'),
+            'password'=>Hash::make($password),
             'role'=>'admin',
             'email_verified_at'=>now(),
             
